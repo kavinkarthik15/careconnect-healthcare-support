@@ -46,11 +46,11 @@ Healthcare NGOs often receive numerous support requests and volunteer inquiries.
 
 ## GitHub Repository
 
-[https://github.com/kavinkarthik15/careconnect-healthcare-support](https://github.com/kavinkarthik15/careconnect-healthcare-support)
+https://github.com/kavinkarthik15/careconnect-healthcare-support
 
 ## Live Hosted Link
 
-Add your Netlify deployment link here after deployment.
+https://careconnect-community-support.netlify.app
 
 ## Future Enhancements
 
