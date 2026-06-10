@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CareConnect - Healthcare Support App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>CareConnect NGO Support</h1>
+      <p class="subtitle">A simple support page created to help patients and volunteers connect with a healthcare NGO.</p>
+    </header>
+
+  <main>
+    <section id="about-section">
+      <h2>About This Project</h2>
+      <p>CareConnect is a small web app prototype made for healthcare support activities. It helps patients submit support requests and allows volunteers to register their interest. The project also includes a simple FAQ assistant to answer common questions quickly.</p>
+    </section>
+
+    <section id="form-section">
+      <h2>Patient / Volunteer Form</h2>
+      <form id="supportForm">
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" required>
+        </div>
+
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+        </div>
+
+        <div>
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" required>
+        </div>
+
+        <div>
+          <label for="role">Select Role</label>
+          <select id="role" required>
+            <option value="">Select Role</option>
+            <option value="patient">Patient</option>
+            <option value="volunteer">Volunteer</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="message">Message:</label>
+          <textarea id="message" required></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+      <div id="responseMessage"></div>
+    </section>
+
+    <section id="faq-section">
+      <h2>Quick Help Assistant</h2>
+      <div id="faqContainer">
+        <label for="faqSelect">Choose a question</label>
+        <select id="faqSelect">
+          <option value="">Choose a question</option>
+          <option value="services">What services do you provide?</option>
+          <option value="volunteer">How can I volunteer?</option>
+          <option value="request">How can patients request help?</option>
+          <option value="free">Is this service free?</option>
+        </select>
+        <div id="chatbotAnswer"></div>
+      </div>
+    </section>
+
+    <footer>
+      Made as a mini project for healthcare NGO support.
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
